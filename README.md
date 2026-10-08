@@ -1,5 +1,11 @@
 # agent-memory
 
+[![License: MIT](https://img.shields.io/github/license/rooty/agent-memory)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
+[![MCP](https://img.shields.io/badge/MCP-Streamable_HTTP-6E56CF)](https://modelcontextprotocol.io/)
+[![Agents](https://img.shields.io/badge/agents-Claude_Code_%7C_Codex_%7C_Hermes-555)](#подключение-агентов)
+
 Общая память для агентов Claude Code, Codex и Hermes Agent. Это MCP-сервер на Cloudflare Workers
 с хранилищем в D1 (SQLite). Агенты подключаются к нему по HTTP и читают и пишут общие факты,
 например «как сообщать, что задача закончена, запушена и задеплоена».
@@ -88,3 +94,7 @@ mcp_servers:
 ```
 
 Проверка: `hermes mcp test memory`.
+
+## Лицензия
+
+[MIT](LICENSE)
