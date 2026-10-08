@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "agent-memory",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "agent-memory",
+      "database_id": "4db13860-3aed-4201-807f-f49288b1bec4",
+      "migrations_dir": "migrations"
+    }
+  ]
+  // Секрет MEMORY_TOKEN задаётся через `wrangler secret put MEMORY_TOKEN`,
+  // локально — в файле .dev.vars.
+}
